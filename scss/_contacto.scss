@@ -1,0 +1,110 @@
+.contacto {
+    grid-area: contacto;
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+
+}
+
+#contacto-form {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+    
+
+
+    .form {
+
+        text-align: center;
+        font-size: 16px;
+        margin: auto;
+
+        textarea {
+            min-height: 100px;
+            resize: none;
+        }
+    }
+
+    .form__select {
+        width: 50%;
+        padding: 10px;
+        margin: 6px 0;
+        text-align: left;
+        border: none;
+        border-bottom: 3px solid #5dbdb0;
+    }
+
+    .form__input {
+        width: 90%;
+        padding: 10px;
+        margin: 6px 0;
+        border: none;
+        border-bottom: 3px solid #5dbdb0;
+    }
+
+    & :focus {
+        border-bottom: 3px solid #003d50;
+        outline: none;
+        background: linear-gradient(to bottom, transparent, #8ec7bf91);
+    }
+
+    .bottom {
+        border: 2px solid #5dbdb0;
+        border-radius: 5px;
+        background-color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+
+        &:hover {
+
+            outline: none;
+            background: linear-gradient(45deg, rgba(0,212,255,0.7455357142857143) 2%, rgba(0,61,80,1) 100%);
+            color: #fff;
+        }
+
+    }
+
+
+
+}
+
+.contacto--mapa {
+    width: 100%;
+}
+
+.box__mapa {
+
+    width: 98%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.box__mapa:hover i {
+    color: #777;
+}
+
+.box__mapa i {
+    font-size: 24px;
+    color: #003d50;
+    padding: 5px;
+}
+
+.box__mapa h4 {
+    font-size: 18px;
+    color: #003d50;
+    padding: 3px;
+
+}
+
+.box__mapa p {
+    font-size: 12px;
+    padding: 7px;
+
+}
