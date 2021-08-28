@@ -24,26 +24,17 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, auto);
 
-    grid-template-areas:
-        "carrusel carrusel carrusel"
-        "redes--uno redes--uno redes--dos"
-        "section section section"
-        "article article article2"
-        "contacto contacto contacto"
-        "footer footer footer";
+       
 }
-
-
-
-
-
-
 
 .contenedor .section {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    grid-area: section;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 
 .contenedor .redes--uno,
@@ -55,10 +46,14 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    margin: 1px;
 }
 
 .contenedor .redes--uno {
-    grid-area: redes--uno;
+    grid-column: 1/3;
+    
+    grid-row: 3/4;
+    grid-row-end: 4;
 
 }
 
@@ -75,8 +70,9 @@ body {
 }
 
 .contenedor .redes--dos {
-    grid-area: redes--dos;
-}
+    grid-column: 3/4;
+    grid-row: 3/4;
+ }
 
 .redes--dos i {
     font-size: 60px;
@@ -93,16 +89,18 @@ body {
     margin-top: 4px;
     width: 100%;
     margin-bottom: 7px;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bolder;
     color: #003d50;
     text-align: center;
+    text-transform: uppercase;
 }
 
 
 .contenedor .article {
 
-    grid-area: article;
+    grid-column: 1/3;
+    grid-row: 6/7;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -111,7 +109,8 @@ body {
 }
 
 .contenedor .article2 {
-    grid-area: article2;
+    grid-column: 3/4;
+    grid-row: 6/7;
 }
 
 .box__video {
@@ -124,7 +123,7 @@ body {
 
 
 .box__video:hover i {
-    color: #777;
+    color: #e97305;
 }
 
 .box__video i {
@@ -145,7 +144,6 @@ body {
     padding: 7px;
 
 }
-
 
 @media screen and (max-width: 992px) {
 

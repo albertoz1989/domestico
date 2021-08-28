@@ -1,7 +1,10 @@
 /* inicio menú */
 
 .contenedor .carrusel {
-    grid-area: carrusel;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
     width: 100%;
     background-image: url(../img/menu.jpg);
     box-sizing: border-box;

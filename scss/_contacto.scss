@@ -1,5 +1,7 @@
 .contacto {
-    grid-area: contacto;
+    
+    grid-column: 1/4;
+    grid-row: 7/8;
     display: flex;
     align-items: flex-start;
     margin: 10px;
@@ -13,37 +15,34 @@
     justify-content: center;
     margin: 10px auto;
     width: 100%;
-    
+        
+        .form {
 
+            text-align: center;
+            font-size: 16px;
+            margin: auto;
 
-    .form {
-
-        text-align: center;
-        font-size: 16px;
-        margin: auto;
-
-        textarea {
-            min-height: 100px;
-            resize: none;
+            textarea {
+                min-height: 100px;
+                resize: none;
+            }
         }
-    }
+        .form__select {
+            width: 50%;
+            padding: 10px;
+            margin: 6px 0;
+            text-align: left;
+            border: none;
+            border-bottom: 3px solid #5dbdb0;
+        }
 
-    .form__select {
-        width: 50%;
-        padding: 10px;
-        margin: 6px 0;
-        text-align: left;
-        border: none;
-        border-bottom: 3px solid #5dbdb0;
-    }
-
-    .form__input {
-        width: 90%;
-        padding: 10px;
-        margin: 6px 0;
-        border: none;
-        border-bottom: 3px solid #5dbdb0;
-    }
+        .form__input {
+            width: 90%;
+            padding: 10px;
+            margin: 6px 0;
+            border: none;
+            border-bottom: 3px solid #5dbdb0;
+        }
 
     & :focus {
         border-bottom: 3px solid #003d50;
@@ -61,15 +60,12 @@
         margin-bottom: 10px;
 
         &:hover {
-
             outline: none;
             background: linear-gradient(45deg, rgba(0,212,255,0.7455357142857143) 2%, rgba(0,61,80,1) 100%);
             color: #fff;
         }
 
     }
-
-
 
 }
 
@@ -84,27 +80,27 @@
     margin: 0 auto;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
     text-align: center;
-}
 
-.box__mapa:hover i {
-    color: #777;
-}
+    i {
+        font-size: 24px;
+        color: #003d50;
+        padding: 5px;
 
-.box__mapa i {
-    font-size: 24px;
-    color: #003d50;
-    padding: 5px;
-}
+        &:hover {
+            color: #e97305;
+        }
+    }
 
-.box__mapa h4 {
-    font-size: 18px;
-    color: #003d50;
-    padding: 3px;
+    h4 {
+        font-size: 18px;
+        color: #003d50;
+        padding: 3px;
+    }
 
-}
+    p {
+        font-size: 12px;
+        padding: 7px;
+    }
 
-.box__mapa p {
-    font-size: 12px;
-    padding: 7px;
-
+   
 }
