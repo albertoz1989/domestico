@@ -1,0 +1,31 @@
+
+
+.box__video {
+    width: 23%;
+    border: 1px solid rgba(153, 153, 153, 0.288);
+    margin: 0 auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+
+    i {
+        font-size: 50px;
+        color: #003d50;
+        padding: 7px;
+
+        &:hover {
+            color: #e97305;
+        }
+    }
+
+    h4 {
+        font-size: 25px;
+        color: #003d50;
+        padding: 7px;
+    
+    }
+
+    p {
+        font-size: 15px;
+        padding: 7px;
+    }
+}
+
