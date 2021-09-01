@@ -631,6 +631,7 @@ body {
   margin-bottom: 7px;
   font-size: 24px;
   font-weight: bolder;
+  text-transform: uppercase;
   color: #003d50;
   text-align: center;
 }
