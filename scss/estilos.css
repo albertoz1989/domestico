@@ -535,6 +535,70 @@
   }
 }
 
+.content--sucursales {
+  padding-top: 10px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: linear-gradient(45deg, rgba(0, 212, 255, 0.745536) 2%, #003d50 100%);
+}
+
+.sucursales__titulo {
+  font-size: 45px;
+  font-weight: bolder;
+  color: #003d50;
+  text-align: center;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.video {
+  width: 60%;
+}
+
+.box--sucursales {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.box--sucursales .caja {
+  width: 19%;
+  border: 1px solid rgba(153, 153, 153, 0.288);
+  margin: 0 auto;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  background-color: #e97305;
+}
+
+.box--sucursales .caja i {
+  font-size: 50px;
+  color: #003d50;
+  padding: 7px;
+}
+
+.box--sucursales .caja i:hover {
+  color: #fff;
+}
+
+.box--sucursales .caja h4 {
+  font-size: 22px;
+  color: #003d50;
+  padding: 7px;
+}
+
 * {
   margin: 0;
   padding: 0;
