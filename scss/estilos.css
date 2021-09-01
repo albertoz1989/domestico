@@ -543,12 +543,13 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: linear-gradient(45deg, rgba(0, 212, 255, 0.745536) 2%, #003d50 100%);
+  background: linear-gradient(45deg, rgba(130, 134, 134, 0.445) 10%, #b0babd 90%);
 }
 
 .sucursales__titulo {
@@ -578,8 +579,8 @@
   width: 19%;
   border: 1px solid rgba(153, 153, 153, 0.288);
   margin: 0 auto;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
   background-color: #e97305;
 }
 
