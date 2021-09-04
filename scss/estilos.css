@@ -3,7 +3,7 @@
   background: linear-gradient(45deg, rgba(0, 212, 255, 0.745536) 2%, #003d50 100%);
   height: 90px;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   z-index: 2;
 }
 
@@ -115,6 +115,23 @@
   .desaparece {
     display: none;
   }
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  position: fixed;
+}
+
+.affix-top {
+  position: static;
+  top: -35px;
+}
+
+.affix + .container-fluid {
+  padding-top: 70px;
 }
 
 .contacto {
@@ -460,24 +477,24 @@
   z-index: -1;
 }
 
-.mySlides {
+.slides {
   display: none;
 }
 
 /* Slideshow container */
-.slideshow-container {
+.carrusel__contenedor {
   max-width: 1200px;
   position: relative;
   margin: auto;
 }
 
-.mySlides img {
+.slides img {
   vertical-align: middle;
   max-height: 400px;
   border-radius: 0 0 30% 0;
 }
 
-.mySlides .name {
+.slides .name {
   width: 100%;
   position: absolute;
   display: -webkit-box;
@@ -489,7 +506,7 @@
 }
 
 /* slide text */
-.mySlides .text {
+.slides .text {
   width: 40%;
   margin-right: 50px;
   font-size: 45px;
@@ -510,14 +527,14 @@
 }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
+.fades {
+  -webkit-animation-name: fades;
   -webkit-animation-duration: .5s;
-  animation-name: fade;
+  animation-name: fades;
   animation-duration: .5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fades {
   from {
     opacity: .7;
   }
@@ -526,7 +543,7 @@
   }
 }
 
-@keyframes fade {
+@keyframes fades {
   from {
     opacity: .7;
   }
@@ -665,6 +682,59 @@
   }
 }
 
+.pulse {
+  z-index: -1;
+  position: absolute;
+  top: 40%;
+  left: 14%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 40rem;
+}
+
+.pulse circle {
+  fill: #ffae51;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: pulse 10s cubic-bezier(1, 1, 1, 1);
+          animation: pulse 10s cubic-bezier(1, 1, 1, 1);
+}
+
+.pulse circle:nth-child(2) {
+  fill: #7fc6a4;
+  -webkit-animation: pulse 6s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+          animation: pulse 6s 0.75s cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+.pulse circle:nth-child(3) {
+  fill: #e5f77d;
+  -webkit-animation: pulse 3s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+          animation: pulse 3s 1.5s cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+@-webkit-keyframes pulse {
+  25% {
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -675,7 +745,7 @@ body {
 }
 
 .contenedor {
-  padding: 90px 0 0;
+  padding: 10px 0 0;
   width: 100%;
   top: 0;
   margin: auto;
@@ -892,7 +962,7 @@ body {
   .linkCompra {
     font-size: 14px;
   }
-  .mySlides .text {
+  .slides .text {
     margin-right: 30px;
     font-size: 30px;
     margin-top: 15%;
@@ -1017,7 +1087,7 @@ body {
     font-size: 12px;
     text-shadow: none;
   }
-  .mySlides img {
+  .slides img {
     height: 250px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1025,7 +1095,7 @@ body {
     z-index: -1;
     border-radius: 0 0 30% 0;
   }
-  .mySlides .text {
+  .slides .text {
     width: 40%;
     margin-right: 7px;
     font-size: 20px;

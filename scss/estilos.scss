@@ -16,7 +16,7 @@ body {
 
 .contenedor {
 
-    padding: 90px 0 0;
+    padding: 10px 0 0;
     width: 100%;
     top: 0;
     margin: auto;
@@ -250,7 +250,7 @@ body {
         font-size: 14px;
     }
 
-    .mySlides .text {
+    .slides .text {
         margin-right: 30px;
         font-size: 30px;
         margin-top: 15%;
@@ -427,7 +427,7 @@ body {
 
     }
 
-    .mySlides img {
+    .slides img {
 
         height: 250px;
         box-sizing: border-box;
@@ -436,7 +436,7 @@ body {
         border-radius: 0 0 30% 0;
     }
 
-    .mySlides .text {
+    .slides .text {
         width: 40%;
         margin-right: 7px;
         font-size: 20px;

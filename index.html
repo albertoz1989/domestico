@@ -13,19 +13,21 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
 		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>	
 
-	<header class="header">
+	<header class="header"  data-spy="affix" data-offset-top="70">
 
-		<nav class="menu">
+		<nav class="menu"  >
 			<a href="index.html"> <img class="logo" src="img/logo.png"> </a>
 			<button class="menu-boton" onclick="accion()">
 				<i class="fas fa-bars"></i>
 			</button>
-			<ul class="navMenu desaparece">
+			<ul class="navMenu desaparece" >
 				<li><a href="index.html" class="current">Doméstico</a></li>
 				<li><a href="html/productos.html">Productos</a></li>
 				<li><a href="html/servicios.html">Servicios</a></li>
@@ -38,24 +40,24 @@
 
 	<main class="contenedor">
 		<section class="carrusel">
-			<div class="slideshow-container">
-				<div class="mySlides fade">
+			<div class="carrusel__contenedor">
+				<div class="slides fades">
 					<img src="img/slide/2.jpg" style="width:100%">
 				</div>
-				<div class="mySlides fade">
+				<div class="slides fades">
 					<div class="name">
 						<div class="text">Todo es Cuestión de Química</div>
 					</div>
 					<img src="img/slide/1.jpg" style="width: 100%">
 				</div>
-				<div class="mySlides fade">
+				<div class="slides fades">
 					<div class="name">
 						<div class="text">ENVÍOS A TODO EL PAIS!! <h4>Distribuimos por Mayor y Menor.</h4>
 						</div>
 					</div>
 					<img src="img/slide/3.jpg" style="width:50%">
 				</div>
-				<div class="mySlides fade">
+				<div class="slides fades">
 					<div class="name">
 						<div class="text">FABRICACIÓN A MEDIDA <h4>Con el mejor estándar de calidad.</h4>
 						</div>
@@ -138,7 +140,7 @@
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen></iframe>
 		</article>
-		<section class="contacto">
+		 <section class="contacto">
 			<div id="contacto-form">
 				<form class="form">
 					<div class="form__titulo">Formulario de contacto</div>
@@ -193,7 +195,7 @@
 					<p>0237 4625721 . 011 22231625 <br> WhatsApp 011 64471234 </p>
 				</div>
 			</div>
-		</section>
+		</section> 
 	</main>
 	
 	<footer class="footer">
@@ -214,7 +216,11 @@
 			</div>
 			<div class="promo__contacto">
 				<h2>CONVERSA CON UN ASESOR!</h2>
-				<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+				<a href="https://api.whatsapp.com/send?phone=5491164471234&text=Mandame un mensaje para cualquier consulta"
+                    class="float" target="_blank">
+                    <i class="fab fa-whatsapp"></i></a>
+                </a>
 			</div>
 		</div>
 		<div class="footer1">
@@ -229,7 +235,7 @@
 
 			function showSlides() {
 				var i;
-				var slides = document.getElementsByClassName("mySlides");
+				var slides = document.getElementsByClassName("slides");
 				for (i = 0; i < slides.length; i++) {
 					slides[i].style.display = "none";
 				}
