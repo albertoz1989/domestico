@@ -119,14 +119,13 @@ $color4: white;
         top: 90px;
         width: 100%;
         padding: 6px 0;
+		
+		li {
+			line-height: 50px;
+			font-weight: bolder;
+		}
     }
-
-    .navMenu li {
-        line-height: 50px;
-        font-weight: bolder;
-
-    }
-
+	
     .navMenu li a:hover,
     ul li .current {
 

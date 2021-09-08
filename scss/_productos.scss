@@ -5,22 +5,26 @@
 .box--productos {
 	width: 15%;
     height: 300px;
-	margin: auto;    
-}
+	margin: auto;  
+	
+	img {
+		width: 100%;
+		height: 90%;
+		border-radius: 8% 10%;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+		object-fit: cover;
+	}  
 
-.box--productos img {
-	width: 100%;
-	height: 90%;
-	border-radius: 8% 10%;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
-	object-fit: cover;
-}
+	&:hover {
+		transform: scale(1.1);
+		transition: 0.7s;
+		opacity: 0.9;
 
-.box--productos:hover {
-    transform: scale(1.1);
-	transition: 0.7s;
-	opacity: 0.9;
-
+		 .middle {
+			transition: 0.3s ease;
+			opacity: 1;
+		  }
+	}
 }
 
 .middle {
@@ -31,25 +35,18 @@
 	top: 40%;
 	width: 90%;
 	left: 5%;
-	
+
+	.text {
+		background: linear-gradient(45deg, rgba(0,61,80,1) 2%, rgba(0,212,255,0.7455357142857143) 100%);
+		font-family: Helvetica, sans-serif;
+		font-weight: bold;
+		color: #fff;
+		font-size: 80%;
+		padding: 10px 18px;
+		border-radius: 20px;
+	}
  }
   
-  .box--productos:hover .middle {
-	transition: 0.3s ease;
-	opacity: 1;
-  }
-  
- .middle .text {
-	background: linear-gradient(45deg, rgba(0,61,80,1) 2%, rgba(0,212,255,0.7455357142857143) 100%);
-	font-family: Helvetica, sans-serif;
-	font-weight: bold;
-	color: #fff;
-	font-size: 80%;
-	padding: 10px 18px;
-	border-radius: 20px;
-	
-  }
-
 /* Section de productos */
 .accordion {
 	width: 95%;
