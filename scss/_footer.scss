@@ -18,6 +18,9 @@
 		img{
 			width: 120px;
 			margin-top: 10px;
+			@media screen and (max-width: 576px) {
+				width: 60px;
+			}
 		}	
 	}
 
@@ -25,11 +28,19 @@
 		width: 40%;
 		background: linear-gradient(to left, transparent, #003d50);
 
+		@media screen and (max-width: 576px) {
+			width: 56%;
+		}
+
 		p{
 			padding: 14px;
 			font-size: 15px;
 			line-height: 1.5;
 			text-align: justify;
+
+			@media screen and (max-width: 576px) {
+				font-size: 12px;
+			}
 		}
 	}
 
@@ -41,6 +52,10 @@
 		background: linear-gradient(to right, transparent, #003d50);
 
 		i{
+
+			@media screen and (max-width: 576px) {
+				font-size: 30px;
+			}
 			color: #e97305;
 			font-size: 50px;
 			padding: 5px;
@@ -84,3 +99,4 @@
     	-webkit-transform: rotate(360deg);
 	}
 }
+
