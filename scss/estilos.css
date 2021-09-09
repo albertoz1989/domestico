@@ -466,7 +466,7 @@
 }
 
 #promo .promo__text {
-  width: 40%;
+  width: 50%;
   background: -webkit-gradient(linear, right top, left top, from(transparent), to(#003d50));
   background: linear-gradient(to left, transparent, #003d50);
 }
@@ -491,7 +491,7 @@
 }
 
 #promo .promo__redes {
-  width: 30%;
+  width: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
