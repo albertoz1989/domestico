@@ -40,17 +40,17 @@
         padding: 10px;
         margin: 6px 0;
         border: none;
-        border-bottom: 3px solid #5dbdb0;
+        border-bottom: 3px solid #e97305;
     }
 
     & :focus {
-        border-bottom: 3px solid #003d50;
+        border-bottom: 3px solid rgb(6, 144, 172);
         outline: none;
         background: linear-gradient(to bottom, transparent, #8ec7bf91);
     }
 
     .bottom {
-        border: 2px solid #5dbdb0;
+        border: 2px solid #e97305;
         border-radius: 5px;
         background-color: white;
         padding: 14px 28px;
@@ -62,6 +62,7 @@
             outline: none;
             background: linear-gradient(45deg, rgba(0, 212, 255, 0.7455357142857143) 2%, rgba(0, 61, 80, 1) 100%);
             color: #fff;
+            border: 2px solid rgb(6, 144, 172);
         }
     }
 }

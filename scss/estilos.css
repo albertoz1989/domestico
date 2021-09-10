@@ -188,18 +188,18 @@
   padding: 10px;
   margin: 6px 0;
   border: none;
-  border-bottom: 3px solid #5dbdb0;
+  border-bottom: 3px solid #e97305;
 }
 
 #contacto-form :focus {
-  border-bottom: 3px solid #003d50;
+  border-bottom: 3px solid #0690ac;
   outline: none;
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#8ec7bf91));
   background: linear-gradient(to bottom, transparent, #8ec7bf91);
 }
 
 #contacto-form .bottom {
-  border: 2px solid #5dbdb0;
+  border: 2px solid #e97305;
   border-radius: 5px;
   background-color: white;
   padding: 14px 28px;
@@ -212,6 +212,7 @@
   outline: none;
   background: linear-gradient(45deg, rgba(0, 212, 255, 0.745536) 2%, #003d50 100%);
   color: #fff;
+  border: 2px solid #0690ac;
 }
 
 .contacto--mapa {
