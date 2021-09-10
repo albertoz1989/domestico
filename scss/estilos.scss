@@ -35,11 +35,6 @@ body {
 }
 
 
-
-
-
-
-
 .contenedor .section {
     height: auto;
     display: flex;
@@ -94,11 +89,12 @@ body {
     margin-top: 4px;
     width: 100%;
     margin-bottom: 7px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bolder;
     text-transform: uppercase;
     color: #003d50;
     text-align: center;
+    
 }
 
 
@@ -114,19 +110,25 @@ body {
 
 .contenedor .article2 {
     grid-area: article2;
+    
 }
 
 .box__video {
     width: 23%;
     border: 1px solid rgba(153, 153, 153, 0.288);
-    margin: 0 auto;
+    margin: 10px, auto;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    transition-duration: 2s;
+    
+  
+	&:hover{
+	
+        background: linear-gradient(45deg, rgba(218, 219, 219, 0.746) 2%, rgb(234, 241, 243) 100%);
+	}
 }
 
-
-
 .box__video:hover i {
-    color: #777;
+    color: #e97305;
 }
 
 .box__video i {
@@ -226,7 +228,7 @@ body {
 
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(30, auto);
+        grid-template-rows: repeat(40, auto);
         grid-template-areas:
         "carrusel  "
         "redes--uno "
@@ -384,7 +386,7 @@ body {
     .contenedor {
 
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(28, auto);
+        grid-template-rows: repeat(40, auto);
         grid-template-areas:
             "carrusel  "
             "redes--uno "
