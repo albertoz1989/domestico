@@ -3,6 +3,11 @@
     display: flex;
     align-items: flex-start;
     margin: 10px;
+    width: 80%;
+    margin: auto;
+    @media screen and (max-width: 576px) {
+        width: 95%;
+    }
 
 }
 
@@ -10,14 +15,13 @@
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px auto;
+    margin: 10px auto;
     width: 100%;
 
     .form {
-
+        width: 70%;
         text-align: center;
-        font-size: 16px;
+        font-size: 12px;
         margin: auto;
 
         textarea {
@@ -29,7 +33,7 @@
     .form__select {
         width: 50%;
         padding: 10px;
-        margin: 6px 0;
+        margin: 2px 0;
         text-align: left;
         border: none;
         border-bottom: 3px solid #5dbdb0;
@@ -37,8 +41,8 @@
 
     .form__input {
         width: 90%;
-        padding: 10px;
-        margin: 6px 0;
+        padding: 7px;
+        margin: 4px 0;
         border: none;
         border-bottom: 3px solid #e97305;
     }
@@ -50,17 +54,18 @@
     }
 
     .bottom {
-        border: 2px solid #e97305;
+        background: linear-gradient(45deg, rgba(0, 212, 255, 0.7455357142857143) 2%, rgba(0, 61, 80, 1) 100%);
+        border: 2px solid rgb(6, 144, 172);
         border-radius: 5px;
-        background-color: white;
-        padding: 14px 28px;
-        font-size: 16px;
+        color: white;
+        padding: 8px 10px;
+        font-size: 12px;
         cursor: pointer;
         margin: 15px;
 
         &:hover {
             outline: none;
-            background: linear-gradient(45deg, rgba(0, 212, 255, 0.7455357142857143) 2%, rgba(0, 61, 80, 1) 100%);
+            background: #e97305;
             color: #fff;
             border: 2px solid rgb(6, 144, 172);
         }
@@ -70,7 +75,7 @@
 .contacto--mapa {
     width: 100%;
     display: grid;
-    gap: 5px;
+    gap: 10px;
 }
 
 .box__mapa {

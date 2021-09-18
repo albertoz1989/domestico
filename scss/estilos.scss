@@ -29,7 +29,8 @@ body {
         "carrusel carrusel carrusel"
         "redes--uno redes--uno redes--dos"
         "section section section"
-        "article article article2"
+        "article article article"
+        "article2 article2 article2"
         "contacto contacto contacto"
         "footer footer footer";
 }
@@ -75,7 +76,7 @@ body {
 }
 
 .redes--dos i {
-    font-size: 60px;
+    font-size: 45px;
     color: #e97305;
     padding: 10px;
 
@@ -87,9 +88,11 @@ body {
 
 .form__titulo {
     margin-top: 4px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
     margin-bottom: 7px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bolder;
     text-transform: uppercase;
     color: #003d50;
@@ -101,22 +104,26 @@ body {
 .contenedor .article {
 
     grid-area: article;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin: auto;
 
 }
 
 .contenedor .article2 {
     grid-area: article2;
+    width: 80%;
+    margin: auto;
+    height: 300px;
     
 }
 
 .box__video {
-    width: 23%;
+    width: 24.7%;
     border: 1px solid rgba(153, 153, 153, 0.288);
-    margin: 10px, auto;
+    margin: auto, 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
     transition-duration: 2s;
     
@@ -132,13 +139,13 @@ body {
 }
 
 .box__video i {
-    font-size: 50px;
+    font-size: 40px;
     color: #003d50;
     padding: 7px;
 }
 
 .box__video h4 {
-    font-size: 25px;
+    font-size: 20px;
     color: #003d50;
     padding: 7px;
 
@@ -169,8 +176,8 @@ body {
     }
 
     .logo {
-        width: 210px;
-        height: 65px;
+        width: 263px;
+        height: 60px;
     }
     .menu {
         max-width: 760px;
@@ -242,11 +249,6 @@ body {
     }
     /* inicio menú */
 
-
-    .logo {
-        width: 250px;
-        height: 70px;
-    }
 
     .linkCompra {
         font-size: 14px;
@@ -403,8 +405,8 @@ body {
 
 
     .logo {
-        width: 180px;
-        height: 55px;
+        width: 219px;
+        height: 50px;
     }
 
     .linkCompra {
