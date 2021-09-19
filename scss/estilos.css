@@ -412,6 +412,8 @@
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+  width: 80%;
+  margin: auto;
 }
 
 @media (min-width: 600px) {
