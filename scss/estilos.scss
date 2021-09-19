@@ -3,7 +3,7 @@
 @import "productos";
 @import "footer";
 @import "slide";
-@import "sucursales";
+@import "franquicias";
 
 * {
     margin: 0;
@@ -407,10 +407,11 @@ body {
     .logo {
         width: 219px;
         height: 50px;
+       
     }
 
     .linkCompra {
-        margin-left: 35%;
+        margin-left: 40%;
         font-size: 12px;
         text-shadow: none;
 

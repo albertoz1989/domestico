@@ -325,7 +325,7 @@
 /* Section de productos */
 .accordion {
   width: 95%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 2rem auto;
 }
 
@@ -340,8 +340,8 @@
 
 .accordion__item__header {
   padding: 0.5rem 3rem 0.5rem 1rem;
-  min-height: 3.5rem;
-  line-height: 1.25rem;
+  min-height: 2.3rem;
+  line-height: 1.2rem;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,6 +484,9 @@
 
 #promo .promo__img {
   width: 20%;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#003d50));
+  background: linear-gradient(to left, transparent, #003d50);
+  margin: auto;
 }
 
 #promo .promo__img img {
@@ -500,8 +503,6 @@
 
 #promo .promo__text {
   width: 40%;
-  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#003d50));
-  background: linear-gradient(to left, transparent, #003d50);
 }
 
 @media screen and (max-width: 576px) {
@@ -624,8 +625,10 @@
 
 .slides img {
   vertical-align: middle;
-  max-height: 400px;
+  max-height: 500px;
   border-radius: 0 0 30% 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slides .name {
@@ -661,7 +664,7 @@
 
 /* Slideshow container */
 .carrusel__contenedor {
-  max-width: 1200px;
+  max-width: 1400px;
   position: relative;
   margin: auto;
 }
@@ -692,7 +695,7 @@
   }
 }
 
-.content--sucursales {
+.content--franquicias {
   padding-top: 10px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -713,7 +716,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .content--sucursales {
+  .content--franquicias {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -721,7 +724,7 @@
   }
 }
 
-.sucursales__titulo {
+.franquicias__titulo {
   font-size: 45px;
   font-weight: bolder;
   color: #003d50;
@@ -731,7 +734,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .sucursales__titulo {
+  .franquicias__titulo {
     font-size: 35px;
     font-weight: bolder;
     color: #003d50;
@@ -742,7 +745,7 @@
 }
 
 @media screen and (max-width: 576px) {
-  .sucursales__titulo {
+  .franquicias__titulo {
     font-size: 28px;
     font-weight: bolder;
     color: #003d50;
@@ -762,7 +765,7 @@
   }
 }
 
-.box--sucursales {
+.box--franquicias {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,7 +776,7 @@
   grid-gap: 10px;
 }
 
-.box--sucursales .caja {
+.box--franquicias .caja {
   width: 15%;
   border: 1px solid rgba(153, 153, 153, 0.288);
   margin: 0 auto;
@@ -782,24 +785,24 @@
   background-color: #e97305;
 }
 
-.box--sucursales .caja i {
+.box--franquicias .caja i {
   font-size: 50px;
   color: #003d50;
   padding: 7px;
 }
 
-.box--sucursales .caja i:hover {
+.box--franquicias .caja i:hover {
   color: #fff;
 }
 
-.box--sucursales .caja h4 {
+.box--franquicias .caja h4 {
   font-size: 18px;
   color: #003d50;
   padding: 7px;
 }
 
 @media screen and (max-width: 768px) {
-  .box--sucursales .caja {
+  .box--franquicias .caja {
     width: 29%;
     border: 1px solid rgba(153, 153, 153, 0.288);
     margin: 0 auto;
@@ -807,15 +810,15 @@
             box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
     background-color: #e97305;
   }
-  .box--sucursales .caja i {
+  .box--franquicias .caja i {
     font-size: 30px;
     color: #003d50;
     padding: 7px;
   }
-  .box--sucursales .caja i:hover {
+  .box--franquicias .caja i:hover {
     color: #fff;
   }
-  .box--sucursales .caja h4 {
+  .box--franquicias .caja h4 {
     font-size: 11px;
     color: #003d50;
     padding: 7px;
@@ -1218,7 +1221,7 @@ body {
     height: 50px;
   }
   .linkCompra {
-    margin-left: 35%;
+    margin-left: 40%;
     font-size: 12px;
     text-shadow: none;
   }

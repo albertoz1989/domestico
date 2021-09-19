@@ -19,10 +19,13 @@
 	
 	.promo__img {
 		width: 20%;
+		background: linear-gradient(to left, transparent, #003d50);
+		margin: auto;
 	
 		img{
 			width: 120px;
 			margin-top: 10px;
+			
 			
 			@media screen and (max-width: 576px) {
 				width: 100%;
@@ -33,7 +36,7 @@
 
 	.promo__text{
 		width: 40%;
-		background: linear-gradient(to left, transparent, #003d50);
+	
 
 		@media screen and (max-width: 576px) {
 			width: 95%;
